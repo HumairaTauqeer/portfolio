@@ -1,0 +1,267 @@
+:root {
+    --green: #42ba96;
+    --footer: #1C7947;
+    --ligt-off-white: #FEFBF3;
+    --grey: #EFEFEF;
+    font-size: 16px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    font-size: 16px;
+}
+
+h1 {
+    font-family: Montserrat;
+    font-weight: 900;
+    text-align: center;
+}
+
+;
+p {
+    font-family: ubuntu;
+}
+
+h2 {
+    font-weight: 600;
+    font-family: Montserrat;
+    text-align: center;
+    padding: 3rem 3rem;
+}
+
+.banner {
+    width: 100%;
+    height: 40rem;
+    margin-bottom: 4rem;
+}
+
+.hero-image {
+    height: 100%;
+    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/laptop.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /*display: flex;
+justify-content: center;
+align-items: center;*/
+    filter: blur(6px);
+    -webkit-filter: blur(5px);
+}
+
+.hero-text h1 {
+    font-family: Montserrat;
+    font-size: 2.7rem;
+    font-weight: 900;
+    padding-bottom: 3rem;
+    padding-top: 15rem;
+}
+
+.hero-text {
+    color: white;
+    text-align: center;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
+.hero-text p {
+    font-family: ubuntu;
+    font-size: 1.3rem;
+    font-weight: 600;
+    padding-bottom: 2rem;
+}
+
+.download-button {
+    padding: .75rem;
+    margin-right: 1rem;
+}
+
+#about-me {
+    margin: 0 auto;
+    width: 80%;
+    display: flex;
+    column-gap: 3rem;
+    padding: 1rem 2rem;
+}
+
+.about-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+#about-me h1 {
+    color: var(--footer);
+    padding-bottom: 1.5rem;
+}
+
+#education {
+    margin: 4rem auto 1rem auto;
+    background-color: #EFEFEF;
+    padding-bottom: 1rem;
+}
+
+.education-layers {
+    background-color: white;
+    width: 70%;
+    padding-left: 1.59rem;
+    height: auto;
+    margin: 0 auto 1.15rem auto;
+    text-align: left;
+    border: .063rem solid var(--green);
+}
+
+.education-layers h3 {
+    font-size: 1.2rem;
+    padding-top: 1rem;
+}
+
+.education-layers h4 {
+    font-size: .9rem;
+    padding-bottom: 1rem;
+}
+
+.education-layers span {
+    float: right;
+    padding-right: 1.3rem;
+}
+
+#experience {
+    width: 70%;
+    margin: 0 auto;
+    padding-top: 0;
+}
+
+.experience-layers {
+    background-color: var(--grey);
+    border: 1px solid var(--green);
+    margin-bottom: 1.5rem;
+    padding: 3rem 3rem;
+}
+
+.experience-layers li {
+    font-family: ubuntu;
+}
+
+#skills {
+    background-color: var(--grey);
+    width: 100%;
+    height: 17rem;
+    margin: 0 auto;
+}
+
+.skill-list {
+    width: 80%;
+    margin: 0 auto;
+    padding-left: 5rem;
+    padding-bottom: 3rem;
+}
+
+.col-skill {
+    padding: 1rem 0;
+    width: 12%;
+    background-color: var(--footer);
+    margin-right: 2rem;
+    border-radius: .5rem;
+    text-align: center;
+    font-weight: 600;
+}
+
+.footer {
+    background-color: #444444;
+    width: 100%;
+    height: 8rem;
+    text-align: center;
+    color: var(--grey);
+}
+
+
+/* footer .fa-envelope,
+.fa-github,
+.fa-linkedin { */
+
+.footer-icon {
+    color: var(--footer);
+    padding: 1.5rem 3rem 1.5rem 0;
+    width: 8rem;
+}
+
+@media only screen and (max-width:768px) {
+    /*.navbar {}*/
+    .nav-item {
+        padding: 0 .5rem;
+    }
+    .nav-link {
+        font-size: 1.2rem;
+        font-family: Montserrat;
+        font-weight: lighter;
+        line-height: 1;
+    }
+    .hero-image {
+        height: 26rem;
+    }
+    .hero-text h1 {
+        font-family: Montserrat;
+        font-size: 2rem;
+        font-weight: 600;
+    }
+    .hero-text p {
+        font-family: ubuntu;
+        padding-top: 1.3rem;
+        font-size: 1.3rem;
+        font-weight: 200;
+    }
+    .download-button {
+        margin: 5% 3% 5% 0;
+    }
+    .footer {
+        background-color: grey;
+        height: 5em;
+        text-align: center;
+        padding: 30px 20px;
+    }
+    #about-me {
+        padding-top: 4rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .about-text {
+        padding: 3rem 2rem 0 2rem;
+        text-align: center;
+    }
+    .about-text h1 {
+        padding-bottom: 2rem;
+        font-weight: bold;
+    }
+}
+
+@media only screen and (min-width:1600px) {
+    .hero-text {
+        position: absolute;
+        top: 5%;
+    }
+}
+
+@media only screen and (min-width:1200px) {
+    /* .hero-text h1 {
+        font-family: Montserrat;
+        font-size: 2.7rem;
+        font-weight: 900;
+        padding-bottom: 8rem;
+    } */
+    .hero-text {
+        position: absolute;
+        top: 25%;
+    }
+}
