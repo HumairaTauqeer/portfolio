@@ -3,6 +3,7 @@
     --footer: #1C7947;
     --ligt-off-white: #FEFBF3;
     --grey: #EFEFEF;
+    --footer-grey: #444444;
     font-size: 16px;
 }
 
@@ -39,7 +40,7 @@ h2 {
 .banner {
     width: 100%;
     height: 40rem;
-    margin-bottom: 4rem;
+    margin-bottom: 3rem;
 }
 
 .hero-image {
@@ -90,12 +91,12 @@ align-items: center;*/
     width: 80%;
     display: flex;
     column-gap: 3rem;
-    padding: 1rem 2rem;
+    padding: 2rem;
 }
 
 .about-img {
-    width: 200px;
-    height: 200px;
+    width: 20rem;
+    height: 20rem;
     border-radius: 50%;
 }
 
@@ -155,33 +156,36 @@ align-items: center;*/
 #skills {
     background-color: var(--grey);
     width: 100%;
-    height: 17rem;
+    height: 27rem;
     margin: 0 auto;
 }
 
 .skill-list {
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
-    padding-left: 5rem;
+    padding-left: 6rem;
     padding-bottom: 3rem;
 }
 
 .col-skill {
     padding: 1rem 0;
-    width: 12%;
+    width: 30%;
     background-color: var(--footer);
     margin-right: 2rem;
     border-radius: .5rem;
     text-align: center;
     font-weight: 600;
+    text-align: center;
+    height: 4rem;
+    margin-bottom: 2rem;
 }
 
 .footer {
-    background-color: #444444;
+    background-color: var(--footer-grey);
     width: 100%;
     height: 8rem;
     text-align: center;
-    color: var(--grey);
+    color: var(--grey)
 }
 
 
@@ -203,36 +207,39 @@ align-items: center;*/
     .nav-link {
         font-size: 1.2rem;
         font-family: Montserrat;
-        font-weight: lighter;
+        font-weight: 400;
         line-height: 1;
     }
-    .hero-image {
-        height: 26rem;
+    .banner {
+        height: 35rem;
     }
     .hero-text h1 {
-        font-family: Montserrat;
+        padding-top: 4rem;
         font-size: 2rem;
-        font-weight: 600;
+        font-weight: 800;
     }
     .hero-text p {
-        font-family: ubuntu;
-        padding-top: 1.3rem;
-        font-size: 1.3rem;
+        padding-top: 1rem;
         font-weight: 200;
     }
     .download-button {
-        margin: 5% 3% 5% 0;
+        margin: 4% 8% 3% 0;
+        height: 2.5rem;
+        width: 7rem;
+        font-size: .8rem;
+    }
+    .icon-text {
+        padding-left: .5rem;
     }
     .footer {
-        background-color: grey;
-        height: 5em;
+        background-color: var(--footer-grey);
+        height: 10rem;
         text-align: center;
-        padding: 30px 20px;
+        padding: 1rem 2rem;
     }
     #about-me {
-        padding-top: 4rem;
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
     }
