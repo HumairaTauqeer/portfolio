@@ -25,6 +25,25 @@ h1 {
     text-align: center;
 }
 
+.animate__backInDown {
+    display: inline-block;
+    margin: 0 0.5rem;
+    animation: backInDown;
+    /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 2s;
+    /* don't forget to set a duration! */
+}
+
+.animate__heartBeat {
+    display: inline-block;
+    margin: 0 0.5rem;
+    animation: heartBeat;
+    /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 2s;
+    /* don't forget to set a duration! */
+    animation-delay: 3s
+}
+
 ;
 p {
     font-family: ubuntu;
@@ -104,9 +123,14 @@ align-items: center;*/
     border-radius: 50%;
 }
 
-#about-me h1 {
+#about-me h2 {
     color: var(--footer);
     padding-bottom: 1.5rem;
+    font-weight: bold;
+}
+
+p h2:hover {
+    animation: forwards;
 }
 
 #education {
@@ -300,7 +324,7 @@ align-items: center;*/
     gap: 1rem;
 }
 
-@media only screen and (max-width:768px) {
+@media only screen and (min-width:451px) and (max-width:768px) {
     /*.navbar {}*/
     .nav-item {
         padding: 0 .5rem;
@@ -315,7 +339,7 @@ align-items: center;*/
         height: 45rem;
     }
     .hero-text h1 {
-        padding-top: 12rem;
+        padding-top: 2rem;
         font-size: 2rem;
         font-weight: 800;
     }
@@ -324,7 +348,7 @@ align-items: center;*/
         font-weight: 200;
     }
     .download-button {
-        margin: 10% 8% 3% 0;
+        margin: 6% 8% 3% 0;
         height: 2.5rem;
         width: 7rem;
         font-size: .8rem;
@@ -366,9 +390,12 @@ align-items: center;*/
     #projects .each-project:nth-child(even) .left-side {
         margin-left: 0;
     }
+    #projects .each-project .left-side .project-img img {
+        width: 110%;
+    }
 }
 
-@media only screen and (max-width: 450px) {
+@media only screen and (min-width: 380px)and (max-width:450px) {
     #projects .each-project .right-side .project-button {
         flex-direction: column;
     }
@@ -376,6 +403,22 @@ align-items: center;*/
         width: 100%;
         text-align: center;
         padding-left: 1rem;
+    }
+    .hero-text h1 {
+        padding-top: 0rem;
+        font-size: 2rem;
+        font-weight: 800;
+    }
+    .hero-text p {
+        padding-top: 1rem;
+        font-weight: 200;
+        color: red;
+    }
+    .download-button {
+        margin: 2% 8% 3% 0;
+        height: 2.5rem;
+        width: 7rem;
+        font-size: .8rem;
     }
     .footer {
         height: 20rem;
@@ -404,33 +447,63 @@ align-items: center;*/
         height: 15rem;
         border-radius: 50%;
     }
+    #projects .each-project .left-side .project-img img {
+        object-fit: contain;
+    }
 }
 
-@media only screen and (min-width:1200px) {
+@media only screen and (min-width:769px) and (max-width:1024px) {
+    .hero-text h1 {
+        font-family: Montserrat;
+        font-size: 2rem;
+        font-weight: 800;
+        padding-bottom: 2rem;
+        padding-top: 0;
+    }
+}
+
+@media only screen and (min-width:1025px) and (max-width:1200px) {
+    .hero-text h1 {
+        font-family: Montserrat;
+        font-size: 2.7rem;
+        font-weight: 800;
+        padding-bottom: 4rem;
+        padding-top: 0;
+        width: 100%;
+    }
+    #projects .each-project .left-side .project-img img {
+        object-fit: cover;
+    }
+}
+
+@media only screen and (min-width:1201px) and (max-width:1600px) {
     .hero-text h1 {
         font-family: Montserrat;
         font-size: 2.7rem;
         font-weight: 900;
-        padding-bottom: 8rem;
+        padding-bottom: 2rem;
+        padding-top: 0;
     }
     .hero-text {
         position: absolute;
         top: 35%;
     }
+    #projects .each-project .left-side .project-img img {
+        object-fit: cover;
+    }
 }
 
 @media only screen and (min-width:1600px) {
-    /* .hero-text {
+    .hero-text {
         position: absolute;
-        top: 5%;
-    } */
+        top: 25%;
+    }
     .hero-text h1 {
         padding-top: 4rem;
         padding-bottom: 0;
-        margin-bottom: 1rem;
+        margin-bottom: 2rem;
     }
     .hero-text p {
         margin-bottom: 4rem;
-        color: yellow;
     }
 }
