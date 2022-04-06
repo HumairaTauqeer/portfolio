@@ -1,9 +1,9 @@
 :root {
     --green: #42ba96;
-    --footer: #1C7947;
-    --ligt-off-white: #FEFBF3;
-    --grey: #EFEFEF;
-    --footer-grey: #444444;
+    --dark-green: #1c7947;
+    --ligt-off-white: #fefbf3;
+    --light-grey: #efefef;
+    --dark-grey: #444444;
     font-size: 16px;
 }
 
@@ -41,10 +41,9 @@ h1 {
     /* referring directly to the animation's @keyframe declaration */
     animation-duration: 2s;
     /* don't forget to set a duration! */
-    animation-delay: 3s
+    animation-delay: 3s;
 }
 
-;
 p {
     font-family: ubuntu;
 }
@@ -64,7 +63,7 @@ h2 {
 
 .hero-image {
     height: 100%;
-    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/laptop.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/laptop.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -101,12 +100,12 @@ align-items: center;*/
 }
 
 .download-button {
-    padding: .75rem;
+    padding: 0.75rem;
     margin-right: 1rem;
 }
 
 .icon-text {
-    padding-left: .5rem;
+    padding-left: 0.5rem;
 }
 
 #about-me {
@@ -124,7 +123,7 @@ align-items: center;*/
 }
 
 #about-me h2 {
-    color: var(--footer);
+    color: var(--dark-green);
     padding-bottom: 1.5rem;
     font-weight: bold;
 }
@@ -135,7 +134,7 @@ p h2:hover {
 
 #education {
     margin: 4rem auto 1rem auto;
-    background-color: #EFEFEF;
+    background-color: #efefef;
     padding-bottom: 1rem;
 }
 
@@ -146,7 +145,7 @@ p h2:hover {
     height: auto;
     margin: 0 auto 1.15rem auto;
     text-align: left;
-    border: .063rem solid var(--green);
+    border: 0.063rem solid var(--green);
 }
 
 .education-layers h3 {
@@ -155,7 +154,7 @@ p h2:hover {
 }
 
 .education-layers h4 {
-    font-size: .9rem;
+    font-size: 0.9rem;
     padding-bottom: 1rem;
 }
 
@@ -171,7 +170,7 @@ p h2:hover {
 }
 
 .experience-layers {
-    background-color: var(--grey);
+    background-color: var(--light-grey);
     border: 1px solid var(--green);
     margin-bottom: 1.5rem;
     padding: 3rem 3rem;
@@ -182,7 +181,7 @@ p h2:hover {
 }
 
 #skills {
-    background-color: var(--grey);
+    background-color: var(--light-grey);
     width: 100%;
     height: 27rem;
     margin: 0 auto;
@@ -198,23 +197,23 @@ p h2:hover {
 .col-skill {
     padding: 1rem 0;
     width: 30%;
-    background-color: var(--footer);
+    background-color: var(--dark-green);
     margin-right: 2rem;
-    border-radius: .5rem;
+    border-radius: 0.5rem;
     text-align: center;
     font-weight: 600;
     text-align: center;
     height: 4rem;
     margin-bottom: 2rem;
-    color: var(--grey);
+    color: var(--light-grey);
 }
 
 .footer {
-    background-color: var(--footer-grey);
+    background-color: var(--dark-grey);
     width: 100%;
     height: 8rem;
     text-align: center;
-    color: var(--grey)
+    color: var(--light-grey);
 }
 
 
@@ -223,7 +222,7 @@ p h2:hover {
 .fa-linkedin { */
 
 .footer-icon {
-    color: var(--footer);
+    color: var(--dark-green);
     padding: 1.5rem 3rem 1.5rem 0;
     width: 8rem;
 }
@@ -253,7 +252,7 @@ p h2:hover {
 #projects .each-project .right-side {
     flex: 1;
     margin-left: -150px;
-    background-color: var(--grey);
+    background-color: var(--light-grey);
     padding: 2rem 2rem;
     border: 1px solid var(--green);
     border-radius: 8px;
@@ -274,13 +273,13 @@ p h2:hover {
     overflow: hidden;
     border-radius: 8px;
     /* box-shadow: 0px 0px 20px #B0EACD; */
-    border: 1px solid var(--footer-grey);
+    border: 1px solid var(--dark-grey);
     position: relative;
 }
 
 #projects .each-project .left-side .project-img::after {
     position: absolute;
-    content: '';
+    content: "";
     left: 0;
     right: 0;
     height: 100%;
@@ -324,10 +323,26 @@ p h2:hover {
     gap: 1rem;
 }
 
-@media only screen and (min-width:451px) and (max-width:768px) {
+.project-button .btn {
+    font-size: .8rem !important;
+    width: 8rem;
+}
+
+.project-button {
+    display: flex;
+    flex-direction: row;
+    height: 2rem;
+    font-size: xx-small;
+}
+
+.link-margin {
+    margin-right: 1rem;
+}
+
+@media only screen and (min-width: 451px) and (max-width: 768px) {
     /*.navbar {}*/
     .nav-item {
-        padding: 0 .5rem;
+        padding: 0 0.5rem;
     }
     .nav-link {
         font-size: 1.2rem;
@@ -351,13 +366,10 @@ p h2:hover {
         margin: 6% 8% 3% 0;
         height: 2.5rem;
         width: 7rem;
-        font-size: .8rem;
+        font-size: 0.8rem;
     }
     .footer {
-        background-color: var(--footer-grey);
         height: 10rem;
-        text-align: center;
-        padding: 1rem 2rem;
     }
     #about-me {
         display: flex;
@@ -395,60 +407,65 @@ p h2:hover {
     }
 }
 
-@media only screen and (min-width: 380px)and (max-width:450px) {
-    #projects .each-project .right-side .project-button {
-        flex-direction: column;
-    }
-    #projects .each-project .right-side .project-button a {
-        width: 100%;
-        text-align: center;
-        padding-left: 1rem;
-    }
+@media only screen and (min-width: 370px) and (max-width: 450px) {
     .hero-text h1 {
         padding-top: 0rem;
         font-size: 2rem;
-        font-weight: 800;
+        font-weight: 600;
     }
     .hero-text p {
         padding-top: 1rem;
         font-weight: 200;
-        color: red;
+        font-size: 1rem;
     }
     .download-button {
         margin: 2% 8% 3% 0;
         height: 2.5rem;
         width: 7rem;
-        font-size: .8rem;
+        font-size: 0.8rem;
     }
-    .footer {
-        height: 20rem;
-        text-align: center;
-        padding: 1rem 6rem;
-    }
-    .col-skill {
-        padding-top: 1rem;
-        width: 30%;
-        background-color: var(--footer);
-        margin-right: 2rem;
-        border-radius: .5rem;
-        text-align: center;
-        font-weight: 600;
-        text-align: center;
-        height: 3rem;
-        margin-bottom: 2rem;
-        color: var(--grey);
-        font-size: .7rem;
-    }
-    .skill-list {
-        padding-left: 4rem;
+    #about-me {
+        display: flex;
+        flex-direction: column;
     }
     .about-img {
         width: 15rem;
         height: 15rem;
         border-radius: 50%;
     }
+    #projects .each-project {
+        flex-direction: column;
+        margin-bottom: 5rem;
+    }
+    #projects .each-project h2 {
+        font-size: 1.2rem !important;
+        margin-bottom: -2rem;
+        margin-top: -2rem;
+    }
+    #projects .each-project .left-side {
+        width: 90%;
+    }
+    #projects .each-project .right-side {
+        width: 90%;
+        margin-left: 0;
+        margin-top: -200px;
+    }
+    #projects .each-project:nth-child(even) {
+        flex-direction: column;
+    }
+    #projects .each-project:nth-child(even) .left-side {
+        margin-left: 0;
+        /* margin: 0 auto;
+        width: 20%; */
+    }
     #projects .each-project .left-side .project-img img {
-        object-fit: contain;
+        width: 100%;
+        object-fit: fill;
+        margin: 0 auto;
+    }
+    .project-button .btn {
+        font-size: .8rem !important;
+        width: 8rem;
     }
 }
 
@@ -459,6 +476,10 @@ p h2:hover {
         font-weight: 800;
         padding-bottom: 2rem;
         padding-top: 0;
+    }
+    .project-button .btn {
+        font-size: .8rem !important;
+        width: 8rem;
     }
 }
 
@@ -496,7 +517,7 @@ p h2:hover {
 @media only screen and (min-width:1600px) {
     .hero-text {
         position: absolute;
-        top: 25%;
+        top: 35%;
     }
     .hero-text h1 {
         padding-top: 4rem;
