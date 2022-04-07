@@ -407,7 +407,16 @@ p h2:hover {
     }
 }
 
-@media only screen and (min-width: 370px) and (max-width: 450px) {
+
+/* @media only screen and (min-width: 340px) and (max-width: 450px) {
+    #about-me {
+        display: flex;
+        flex-direction: column;
+        background-color: red;
+    }
+} */
+
+@media only screen and (min-width: 320px) and (max-width: 450px) {
     .hero-text h1 {
         padding-top: 0rem;
         font-size: 2rem;
@@ -429,8 +438,8 @@ p h2:hover {
         flex-direction: column;
     }
     .about-img {
-        width: 15rem;
-        height: 15rem;
+        width: 12rem;
+        height: 12rem;
         border-radius: 50%;
     }
     #projects .each-project {
@@ -438,7 +447,7 @@ p h2:hover {
         margin-bottom: 5rem;
     }
     #projects .each-project h2 {
-        font-size: 1.2rem !important;
+        font-size: 1rem !important;
         margin-bottom: -2rem;
         margin-top: -2rem;
     }
@@ -464,8 +473,27 @@ p h2:hover {
         margin: 0 auto;
     }
     .project-button .btn {
-        font-size: .8rem !important;
-        width: 8rem;
+        font-size: .6rem !important;
+        width: 10rem !important;
+    }
+    .each-project p {
+        font-size: .9rem;
+    }
+    .content ul {
+        font-size: .9rem;
+    }
+    .content p {
+        font-size: .9rem;
+    }
+    .footer {
+        height: 10rem;
+        padding-top: 2rem;
+    }
+    .footer-icon {
+        width: 5rem;
+    }
+    .skill-list {
+        font-size: .9rem;
     }
 }
 
